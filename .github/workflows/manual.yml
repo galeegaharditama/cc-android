@@ -32,7 +32,7 @@ jobs:
       - name: Run Check Versions
         run: ./gradlew dependencyUpdates
       - name: Create Folder
-        run: mkdir -p dependencyUpdates
+        run: mkdir -p /home/runner/work/cc-android/cc-android/
       - name: Upload Report
         uses: actions/upload-artifact@v3
         with:
