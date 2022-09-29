@@ -37,4 +37,4 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: report
-          path: home/runner/work/cc-android/cc-android/app/build/dependencyUpdates/report.html
+          path: /home/runner/work/cc-android/cc-android/app/build/dependencyUpdates/report.html
