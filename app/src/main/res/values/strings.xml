@@ -1,0 +1,105 @@
+<resources>
+    <!--<string name="app_name">Cath Conference</string>-->
+
+    <!--FIREBASE-->
+    <!--<string name="google_app_id" translatable="false">1:111273605716:android:d0d6cc1dee7b71c5110bc1</string>
+    <string name="project_id" translatable="false">cc-android-565b8</string>
+    <string name="google_api_key" translatable="false">AIzaSyAkK5VZF-NB93lMYqHTFOR1JpYIZwhjPKk</string>-->
+    <!--<string name="firebase_database_url" translatable="false">https://dua-kelinci-sfa.firebaseio.com</string>-->
+    <!--<string name="google_storage_bucket" translatable="false">cc-android-565b8.appspot.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">111273605716</string>
+    <string name="default_web_client_id" translatable="false">111273605716-js6lro1k79g3iobjieb82g6oegsld4hk.apps.googleusercontent.com</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAkK5VZF-NB93lMYqHTFOR1JpYIZwhjPKk</string>-->
+    <!--<string name="google_api_key2" translatable="false">AIzaSyARu9wKnwlXLU2S0HdpBRRP9Bd_D7mRtds</string>-->
+
+    <string name="login_title_legacy">Login untuk melanjutkan</string>
+    <string name="mohon_tunggu">Mohon Tunggu..</string>
+    <string name="login_subtitle_legacy">Cath Conference Apps</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="selamat_datang">Selamat Datang</string>
+
+    <string name="register_disini">Belum punya akun ? Silakan daftar disini.</string>
+    <string name="lupa_password">Lupa Password ?</string>
+
+    <string name="nama_user">Nama User</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="tanggal_konferensi">Tanggal Konferensi</string>
+    <string name="tanggal_cath_conference">Tanggal Cath Conference</string>
+    <string name="dpjp_utama">DPJP Utama</string>
+    <string name="dpjp_tindakan">DPJP Tindakan</string>
+    <string name="nama">Nama</string>
+    <string name="nomor_rekam_medik">Nomor Rekam Medik</string>
+    <string name="tanggal_lahir">Tanggal Lahir</string>
+    <string name="usia">Usia</string>
+    <string name="alamat">Alamat</string>
+    <string name="suku">Suku</string>
+    <string name="pekerjaan">Pekerjaan</string>
+    <string name="pendidikan_terakhir">Pendidikan Terakhir</string>
+    <string name="agama">Agama</string>
+    <string name="anamnesis">Anamnesis</string>
+    <string name="pemeriksaan_fisik">Pemeriksaan Fisik</string>
+    <string name="tambah_hasil_ekg">Tambah Hasil EKG</string>
+    <string name="tidak_ada_hasil_ekg">Tidak Ada Hasil EKG</string>
+    <string name="simpan_data">Simpan Data</string>
+    <string name="hasil_ekg">Hasil EKG</string>
+    <string name="keputusan">Keputusan</string>
+    <string name="alasan">Alasan</string>
+    <string name="tanggal_rencana_tindakan">Tanggal Rencana Tindakan</string>
+    <string name="approve_cath">Approve Cath</string>
+    <string name="lihat_semua">Lihat Semua</string>
+    <string name="form_cath_conference">Form Cath Conference</string>
+    <string name="tambah_form_cath_conference">Tambah Form Cath Conference</string>
+    <string name="cari_disini">Cari Disini ..</string>
+    <string name="level">Level</string>
+    <string name="konfirmasi_password">Konfirmasi Password</string>
+    <string name="submit">Submit</string>
+    <string name="registrasi_pengguna">Registrasi Pengguna</string>
+    <string name="copyright">Cath Conference @ 2020</string>
+    <string name="identitas_pasien">Identitas Pasien</string>
+    <string name="klinik_pasien">Klinik Pasien</string>
+    <string name="hasil_laboratorium">Hasil Laboratorium</string>
+    <string name="diagnosis">Diagnosis</string>
+    <string name="update">UPDATE</string>
+    <string name="tanggal_rencana_tindakan_akhir">Tanggal Rencana Tindakan Akhir</string>
+    <string name="tambah_laporan">Tambah Laporan</string>
+    <string name="hapus">Hapus</string>
+    <string name="laporan">Laporan</string>
+    <string name="masukkan_laporan_rontgen">Masukkan Laporan Rontgen</string>
+    <string name="logout">Logout</string>
+    <string name="export_pdf">Export PDF</string>
+    <string name="export_ppt">Export PPT</string>
+
+    <!--Compose Purpose-->
+    <string name="show_less">Show Less</string>
+    <string name="show_more">Show More</string>
+    <string name="lorem_ipsum_long">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="lesson_two_placeholder">Search</string>
+    <string name="lesson_two_section_one">Align Your Body</string>
+    <string name="lesson_two_section_two">Favorite Collections</string>
+    <string name="lesson_two_home_one">Home</string>
+    <string name="lesson_two_home_two">Profile</string>
+    <string name="lesson_three_one">Top Story</string>
+    <string name="lesson_three_two">Popular</string>
+    <string name="lesson_three_three">%d min read</string>
+    <string name="lesson_four_one">Home</string>
+    <string name="lesson_four_two">Work</string>
+    <string name="lesson_four_three">Edit</string>
+    <string name="lesson_four_four">Edit Feature is not available</string>
+    <string name="lesson_four_five">Topic</string>
+    <string name="lesson_four_six">Weather</string>
+    <string-array name="lesson_four_array1">
+        <item>Buy milk</item>
+        <item>Choose curtain</item>
+        <item>Plant rosemary</item>
+        <item>Finish the essay</item>
+        <item>Receive new packages</item>
+        <item>Take a photo</item>
+    </string-array>
+    <string-array name="lesson_four_array2">
+        <item>2 new packages arrived</item>
+        <item>DIY project recommendation</item>
+        <item>Festival next month</item>
+        <item>New flower seeds available</item>
+    </string-array>
+</resources>

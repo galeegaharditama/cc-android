@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="form_create_title_top_bar">Form Cath Conference</string>
+    <string name="form_create_title_data_cc">Data Cath Conference</string>
+    <string name="form_create_title_data_pasien">Data Pasien</string>
+    <string name="form_create_title_data_klinis">Data Klinis</string>
+
+  <string name="form_update_title_top_bar">Update Cath Conference</string>
+
+
+  <string name="patient_birthday">Tgl. Lahir</string>
+    <string name="patient_address">Alamat</string>
+    <string name="patient_suku">Suku</string>
+    <string name="patient_work">Pekerjaan</string>
+    <string name="patient_last_education">Pendidikan Terakhir</string>
+    <string name="klinis_anamnesis">Anamnesis</string>
+    <string name="klinis_physical">Pemeriksaan Fisik</string>
+    <string name="klinis_laboratorium">Hasil Laboratorium</string>
+    <string name="klinis_diagnosis">Hasil Diagnosis</string>
+    <string name="klinis_elektrokardiogram">Hasil Elektrokardiogram</string>
+    <string name="klinis_rontgen_thorax">Hasil Rontgen Thorax</string>
+    <string name="klinis_echocardiogram">Hasil Echocardiogram</string>
+    <string name="klinis_penunjang">Hasil Penunjang</string>
+
+    <string name="form_create_button">Submit</string>
+</resources>

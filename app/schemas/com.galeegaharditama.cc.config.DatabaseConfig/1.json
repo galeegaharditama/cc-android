@@ -1,0 +1,552 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "12801fc807873a559efd3acd38140e9e",
+    "entities": [
+      {
+        "tableName": "cath_conference",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `tgl_cath` TEXT NOT NULL, `dpjp_utama` INTEGER NOT NULL, `dpjp_tindakan` INTEGER, `nama` TEXT NOT NULL, `no_rekam_medik` TEXT NOT NULL, `tgl_lahir` TEXT NOT NULL, `usia` INTEGER NOT NULL, `alamat` TEXT NOT NULL, `suku` TEXT NOT NULL, `pekerjaan` TEXT NOT NULL, `pendidikan_terakhir` TEXT NOT NULL, `agama` TEXT NOT NULL, `anamnesis` TEXT NOT NULL, `pemeriksaan_fisik` TEXT NOT NULL, `hasil_laboratorium` TEXT NOT NULL, `diagnosis` TEXT NOT NULL, `status_approval` TEXT, `alasan` TEXT, `tgl_rencana_tindakan` TEXT, `tgl_rencana_tindakan_akhir` TEXT, `id_online` INTEGER NOT NULL, `status` INTEGER NOT NULL, `status_kirim` INTEGER NOT NULL, `created_at` TEXT NOT NULL, `updated_at` TEXT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "tgl_cath",
+            "columnName": "tgl_cath",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "dpjp_utama",
+            "columnName": "dpjp_utama",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "dpjp_tindakan",
+            "columnName": "dpjp_tindakan",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "nama",
+            "columnName": "nama",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "no_rekam_medik",
+            "columnName": "no_rekam_medik",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "tgl_lahir",
+            "columnName": "tgl_lahir",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "usia",
+            "columnName": "usia",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "alamat",
+            "columnName": "alamat",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "suku",
+            "columnName": "suku",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "pekerjaan",
+            "columnName": "pekerjaan",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "pendidikan_terakhir",
+            "columnName": "pendidikan_terakhir",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "agama",
+            "columnName": "agama",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "anamnesis",
+            "columnName": "anamnesis",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "pemeriksaan_fisik",
+            "columnName": "pemeriksaan_fisik",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "hasil_laboratorium",
+            "columnName": "hasil_laboratorium",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "diagnosis",
+            "columnName": "diagnosis",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "status_approval",
+            "columnName": "status_approval",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "alasan",
+            "columnName": "alasan",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "tgl_rencana_tindakan",
+            "columnName": "tgl_rencana_tindakan",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "tgl_rencana_tindakan_akhir",
+            "columnName": "tgl_rencana_tindakan_akhir",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "id_online",
+            "columnName": "id_online",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "status_kirim",
+            "columnName": "status_kirim",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "created_at",
+            "columnName": "created_at",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "updated_at",
+            "columnName": "updated_at",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "hasil_ekg",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `cath_id` INTEGER NOT NULL, `title` TEXT NOT NULL, `path` TEXT NOT NULL, `temp_path` TEXT NOT NULL, `size` INTEGER NOT NULL, `extension` TEXT NOT NULL, `is_local` INTEGER NOT NULL, `thumbnail` TEXT NOT NULL, `status` INTEGER NOT NULL, `status_kirim` INTEGER NOT NULL, `created_at` TEXT NOT NULL, `updated_at` TEXT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "cath_id",
+            "columnName": "cath_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "title",
+            "columnName": "title",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "path",
+            "columnName": "path",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "temp_path",
+            "columnName": "temp_path",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "size",
+            "columnName": "size",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "extension",
+            "columnName": "extension",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "is_local",
+            "columnName": "is_local",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "thumbnail",
+            "columnName": "thumbnail",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "status_kirim",
+            "columnName": "status_kirim",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "created_at",
+            "columnName": "created_at",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "updated_at",
+            "columnName": "updated_at",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "hasil_echocardiogram",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `cath_id` INTEGER NOT NULL, `title` TEXT NOT NULL, `path` TEXT NOT NULL, `temp_path` TEXT NOT NULL, `size` INTEGER NOT NULL, `extension` TEXT NOT NULL, `is_local` INTEGER NOT NULL, `thumbnail` TEXT NOT NULL, `status` INTEGER NOT NULL, `status_kirim` INTEGER NOT NULL, `created_at` TEXT NOT NULL, `updated_at` TEXT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "cath_id",
+            "columnName": "cath_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "title",
+            "columnName": "title",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "path",
+            "columnName": "path",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "temp_path",
+            "columnName": "temp_path",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "size",
+            "columnName": "size",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "extension",
+            "columnName": "extension",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "is_local",
+            "columnName": "is_local",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "thumbnail",
+            "columnName": "thumbnail",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "status_kirim",
+            "columnName": "status_kirim",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "created_at",
+            "columnName": "created_at",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "updated_at",
+            "columnName": "updated_at",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "hasil_penunjang",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `cath_id` INTEGER NOT NULL, `title` TEXT NOT NULL, `path` TEXT NOT NULL, `temp_path` TEXT NOT NULL, `size` INTEGER NOT NULL, `extension` TEXT NOT NULL, `is_local` INTEGER NOT NULL, `thumbnail` TEXT NOT NULL, `status` INTEGER NOT NULL, `status_kirim` INTEGER NOT NULL, `created_at` TEXT NOT NULL, `updated_at` TEXT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "cath_id",
+            "columnName": "cath_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "title",
+            "columnName": "title",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "path",
+            "columnName": "path",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "temp_path",
+            "columnName": "temp_path",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "size",
+            "columnName": "size",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "extension",
+            "columnName": "extension",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "is_local",
+            "columnName": "is_local",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "thumbnail",
+            "columnName": "thumbnail",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "status_kirim",
+            "columnName": "status_kirim",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "created_at",
+            "columnName": "created_at",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "updated_at",
+            "columnName": "updated_at",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "hasil_thorax",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `cath_id` INTEGER NOT NULL, `title` TEXT NOT NULL, `path` TEXT NOT NULL, `temp_path` TEXT NOT NULL, `size` INTEGER NOT NULL, `extension` TEXT NOT NULL, `is_local` INTEGER NOT NULL, `thumbnail` TEXT NOT NULL, `status` INTEGER NOT NULL, `status_kirim` INTEGER NOT NULL, `created_at` TEXT NOT NULL, `updated_at` TEXT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "cath_id",
+            "columnName": "cath_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "title",
+            "columnName": "title",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "path",
+            "columnName": "path",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "temp_path",
+            "columnName": "temp_path",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "size",
+            "columnName": "size",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "extension",
+            "columnName": "extension",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "is_local",
+            "columnName": "is_local",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "thumbnail",
+            "columnName": "thumbnail",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "status_kirim",
+            "columnName": "status_kirim",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "created_at",
+            "columnName": "created_at",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "updated_at",
+            "columnName": "updated_at",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '12801fc807873a559efd3acd38140e9e')"
+    ]
+  }
+}

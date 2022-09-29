@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dashboard_title">Dashboard</string>
+
+    <string name="view_all">Lihat Semua</string>
+    <string name="data_cc">Data Cath Conference</string>
+</resources>

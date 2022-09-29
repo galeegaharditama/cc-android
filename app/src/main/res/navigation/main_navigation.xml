@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/splash">
+
+    <fragment
+        android:id="@+id/splash"
+        android:name="com.galeegaharditama.cc.ui.splash.SplashFragment"
+        android:label="SplashFragment"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/action_Splash_to_Login"
+            app:destination="@id/login"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"
+            app:popUpTo="@id/splash"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_Splash_to_Dashboard"
+            app:destination="@id/dashboard"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"
+            app:popUpTo="@id/splash"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/login"
+        android:name="com.galeegaharditama.cc.ui.login.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_Login_to_Dashboard"
+            app:destination="@id/dashboard"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_from_left"
+            app:popEnterAnim="@anim/slide_in_from_right"
+            app:popExitAnim="@anim/slide_out_from_left"
+            app:popUpTo="@id/login"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_Login_to_Register"
+            app:destination="@id/register"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_from_left"
+            app:popEnterAnim="@anim/slide_in_from_right"
+            app:popExitAnim="@anim/slide_out_from_left" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/register"
+        android:name="com.galeegaharditama.cc.ui.register.RegisterFragment"
+        android:label="Registrasi Pengguna"
+        tools:layout="@layout/fragment_register"></fragment>
+
+    <fragment
+        android:id="@+id/dashboard"
+        android:name="com.galeegaharditama.cc.ui.dashboard.DashboardFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/action_Dashboard_to_Login"
+            app:destination="@id/login"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_from_left"
+            app:popEnterAnim="@anim/slide_in_from_right"
+            app:popExitAnim="@anim/slide_out_from_left"
+            app:popUpTo="@id/dashboard"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_Dashboard_to_FormCathConference"
+            app:destination="@id/form_cath"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_from_left"
+            app:popEnterAnim="@anim/slide_in_from_right"
+            app:popExitAnim="@anim/slide_out_from_left" />
+
+        <action
+            android:id="@+id/action_Dashboard_to_ApproveCathConference"
+            app:destination="@id/approve_form"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_from_left"
+            app:popEnterAnim="@anim/slide_in_from_right"
+            app:popExitAnim="@anim/slide_out_from_left" />
+
+        <action
+            android:id="@+id/action_Dashboard_to_SearchCathConference"
+            app:destination="@id/search_form"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_from_left"
+            app:popEnterAnim="@anim/slide_in_from_right"
+            app:popExitAnim="@anim/slide_out_from_left" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/form_cath"
+        android:name="com.galeegaharditama.cc.ui.form.CathConferenceFragment"
+        android:label="Form Cath Conference"
+        tools:layout="@layout/fragment_form_cath">
+
+    </fragment>
+    <fragment
+        android:id="@+id/approve_form"
+        android:name="com.galeegaharditama.cc.ui.approve.ApproveFormFragment"
+        android:label="Approve Cath Conference"
+        tools:layout="@layout/fragment_form_approve">
+
+        <action
+            android:id="@+id/action_Approve_to_ReviewCathConference"
+            app:destination="@id/review_form"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_from_left"
+            app:popEnterAnim="@anim/slide_in_from_right"
+            app:popExitAnim="@anim/slide_out_from_left" />
+
+        <action
+            android:id="@+id/action_Approve_to_UpdateCathConference"
+            app:destination="@id/update_form"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_from_left"
+            app:popEnterAnim="@anim/slide_in_from_right"
+            app:popExitAnim="@anim/slide_out_from_left" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/label_upload_rontgen"
+        android:label="Laporan" />
+
+    <fragment
+        android:id="@+id/update_form"
+        android:name="com.galeegaharditama.cc.ui.form.update.UpdateFormCathConferenceFragment"
+        android:label="Update Cath Conference"
+        tools:layout="@layout/fragment_form_cath" />
+
+    <fragment
+        android:id="@+id/review_form"
+        android:name="com.galeegaharditama.cc.ui.form.review.ReviewFormCathConferenceFragment"
+        android:label="Review Cath Conference"
+        tools:layout="@layout/fragment_form_cath" />
+
+    <fragment
+        android:id="@+id/search_form"
+        android:name="com.galeegaharditama.cc.ui.search.SearchFragment"
+        android:label="Search Cath Conference"
+        tools:layout="@layout/fragment_search">
+        <action
+            android:id="@+id/action_Search_to_ApproveCathConference"
+            app:destination="@id/approve_form"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_from_left"
+            app:popEnterAnim="@anim/slide_in_from_right"
+            app:popExitAnim="@anim/slide_out_from_left" />
+    </fragment>
+</navigation>

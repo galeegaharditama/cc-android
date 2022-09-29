@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login_app_name">Cath Conference</string>
+    <string name="login_title">Masuk Aplikasi Cath Conference</string>
+    <string name="login_subtitle">Isi Email dan Password untuk melanjutkan</string>
+    <string name="login">Masuk</string>
+
+    <string name="forgot_password">Lupa Password ?</string>
+    <string name="register_here">Belum punya akun ? Daftar disini</string>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Cath Conference Apps</string>
+
+  <string name="popup_error_title">Maaf, kesalahan server nih!</string>
+  <string name="popup_error_subtitle">Coba ulangi beberapa saat lagi</string>
+  <string name="popup_lost_connection_title">Tidak ada koneksi internet</string>
+  <string name="popup_lost_connection_subtitle">Coba periksa kembali koneksi internetmu</string>
+  <string name="popup_not_found_title">Maaf, halaman tidak ditemukan nih!</string>
+  <string name="popup_not_found_subtitle">Coba kunjungi halaman yang lain ya</string>
+  <string name="popup_refresh">Muat ulang</string>
+  <string name="popup_settings">Pengaturan</string>
+  <string name="popup_back">Kembali</string>
+
+  <string name="email">Email</string>
+  <string name="password">Password</string>
+  <string name="first_name">Nama Depan</string>
+  <string name="last_name">Nama Belakang</string>
+  <string name="confirm_password">Konfirmasi Password</string>
+  <string name="level">Level</string>
+  <string name="tgl_cc">Tgl. Cath Conference</string>
+  <string name="dpjp_utama">Dpjp Utama</string>
+  <string name="dpjp_tindakan">Dpjp Tindakan</string>
+  <string name="medical_record">Nomor Rekam Medik</string>
+  <string name="patient_name">Nama</string>
+  <string name="patient_age">Umur</string>
+  <string name="patient_religion">Agama</string>
+  <string name="diagnosis_result">Hasil Diagnosis</string>
+  <string name="count_age">%s Tahun</string>
+
+  <string name="error_not_found">Data Tidak Ditemukan</string>
+
+  <string name="input_blank">Isian ini tidak boleh kosong</string>
+  <string name="email_invalid">Email tidak valid</string>
+  <string name="input_not_match">Isian ini tidak sama dengan Password</string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="register_app_name">Cath Conference</string>
+    <string name="register_title">Daftarkan Akunmu</string>
+    <string name="register_subtitle">Lengkapi data diri untuk mendaftar di Aplikasi Cath Conference</string>
+    <string name="register">Daftar</string>
+    <string name="register_msg_success">Akun anda berhasil didaftarkan!</string>
+
+</resources>

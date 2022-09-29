@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.galeegaharditama.cc">
+
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+  <application
+      android:name=".MainApp"
+      android:allowBackup="true"
+      android:dataExtractionRules="@xml/data_extraction_rules"
+      android:fullBackupContent="@xml/backup_rules"
+      android:icon="@mipmap/ic_launcher"
+      android:label="@string/app_name"
+      android:networkSecurityConfig="@xml/network_security"
+      android:requestLegacyExternalStorage="true"
+      android:roundIcon="@mipmap/ic_launcher_round"
+      android:supportsRtl="true">
+    <activity
+        android:name=".MainActivity"
+        android:exported="true"
+        android:theme="@style/Theme.CathConference">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:name=".stepcompose.LessonOneActivity" />
+    <activity android:name=".stepcompose.LessonTwoActivity" />
+    <activity android:name=".stepcompose.lessonthree.LessonThreeActivity" />
+    <activity android:name=".stepcompose.LessonFourActivity" />
+    <activity android:name=".stepcompose.lessonfive.LessonFiveActivity" />
+    <activity android:name=".stepcompose.lessonsix.LessonSixActivity" />
+
+    <provider
+        android:name="androidx.core.content.FileProvider"
+        android:authorities="${applicationId}.provider"
+        android:exported="false"
+        android:grantUriPermissions="true">
+      <meta-data
+          android:name="android.support.FILE_PROVIDER_PATHS"
+          android:resource="@xml/path" />
+    </provider>
+    <!--<provider
+        android:name="androidx.core.content.FileProvider"
+        android:authorities="${applicationId}"
+        android:exported="false"
+        android:grantUriPermissions="true">
+        <meta-data
+            android:name="android.support.FILE_PROVIDER_PATHS"
+            android:resource="@xml/path" />
+    </provider>
+
+    <meta-data
+        android:name="com.onesignal.NotificationServiceExtension"
+        android:value="com.galeegaharditama.cc.helper.MyNotificationService" />-->
+  </application>
+
+</manifest>
