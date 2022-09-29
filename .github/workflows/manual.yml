@@ -31,8 +31,6 @@ jobs:
         run: echo "url_prod=\"\"" >> local.properties
       - name: Run Check Versions
         run: ./gradlew dependencyUpdates
-      - name: Create Folder
-        run: mkdir -p /home/runner/work/cc-android/cc-android/app/build/dependencyUpdates/
       - name: Upload Report
         uses: actions/upload-artifact@v3
         with:
