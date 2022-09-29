@@ -1,11 +1,6 @@
 # This is a basic workflow that is manually triggered
 
 name: Manual workflow
-
-on:
-  push:
-    branches:
-      - master
       
 jobs:
   check:
