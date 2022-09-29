@@ -31,8 +31,10 @@ jobs:
         run: echo "url_prod=\"\"" >> local.properties
       - name: Run Check Versions
         run: ./gradlew dependencyUpdates
+      - name: Create Folder
+        run: mkdir -p dependencyUpdates
       - name: Upload Report
         uses: actions/upload-artifact@v1
         with:
           name: report
-          path: report.html 
+          path: dependencyUpdates/report.html 
