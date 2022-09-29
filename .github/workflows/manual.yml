@@ -35,6 +35,4 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: report
-          path: app/build/dependencyUpdates/report.html
-      # - name: Build with Gradle
-      #   run: ./gradlew build      
+          path: report.html 
