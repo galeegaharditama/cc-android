@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "5 * * * *" # At every 5 minute
-      
+
 jobs:
   build:
     name: Running Check Versions
@@ -37,5 +37,4 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: report
-          path: build/dependencyUpdates/report.html
- 
+          path: reports/dependencyUpdates/report.html

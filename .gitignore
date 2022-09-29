@@ -262,6 +262,9 @@ Thumbs.db
 # Jacoco
 jacoco/
 
+# report
+reports/
+
 # Mobile Tools for Java (J2ME)
 
 # Package Files #
