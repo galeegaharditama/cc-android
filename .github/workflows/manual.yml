@@ -23,6 +23,12 @@ jobs:
         run: chmod +x gradlew
       - name: Touch local properties
         run: touch local.properties
+      - name: Add Api Key
+        run: echo "api_key=\"\"" >> local.properties
+      - name: Add Url Demo
+        run: echo "url_demo=\"\"" >> local.properties
+      - name: Add Url Prod
+        run: echo "url_prod=\"\"" >> local.properties
       - name: Run Check Versions
         run: ./gradlew dependencyUpdates
       - name: Upload Report
